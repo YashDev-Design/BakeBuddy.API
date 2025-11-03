@@ -7,21 +7,22 @@ Built with **Express**, **MongoDB**, and structured for scalability — this pro
 
 ## 🧱 Folder Structure
 
+```
 Node - JS Project/
 │
-├── client/ # Frontend (React or other UI)
+├── client/              # Frontend (React or other UI)
 │
-└── server/ # Backend (Express + MongoDB)
-├── models/ # Mongoose schemas
-├── index.js # Main Express app entry
-├── .env # Environment variables (not committed)
-├── package.json # Backend dependencies
-└── node_modules/
+└── server/              # Backend (Express + MongoDB)
+    ├── models/          # Mongoose schemas
+    ├── index.js         # Main Express app entry
+    ├── .env             # Environment variables (not committed)
+    ├── package.json     # Backend dependencies
+    └── node_modules/
+```
 
 ---
 
 ## 🚀 Features
-
 - Modular architecture with separate **client** and **server**
 - RESTful API built with Express
 - MongoDB + Mongoose integration
@@ -34,89 +35,89 @@ Node - JS Project/
 ## ⚙️ Setup & Installation
 
 ### 1️⃣ Clone the Repository
-
 ```bash
 git clone https://github.com/YashDev-Design/MyDeserts-API.git
 cd "Node - JS Project"
+```
 
+---
 
-⸻
-
-2️⃣ Setup the Server
-
+### 2️⃣ Setup the Server
+```bash
 cd server
 npm install
+```
 
-Create a .env file inside /server:
-
+Create a `.env` file inside `/server`:
+```bash
 PORT=10000
 MONGO_URI=your_mongodb_connection_string
+```
 
 Then run:
-
+```bash
 npm run dev
+```
 
 You should see:
-
+```
 ✅ Server running on http://localhost:10000
 ✅ MongoDB connected successfully
+```
 
+---
 
-⸻
-
-3️⃣ Setup the Client
-
+### 3️⃣ Setup the Client
+```bash
 cd ../client
 npm install
 npm start
+```
 
 The client will start on its own port (e.g. http://localhost:3000).
 
-⸻
+---
 
-🧠 API Endpoints
+## 🧠 API Endpoints
 
-Method	Endpoint	Description
-GET	/	Server status check
-GET	/api/deserts	Fetch all desserts
-POST	/api/deserts	Add a new dessert
-DELETE	/api/deserts/:id	Delete dessert by ID
+| Method | Endpoint | Description |
+|--------|-----------|-------------|
+| GET | `/` | Server status check |
+| GET | `/api/deserts` | Fetch all desserts |
+| POST | `/api/deserts` | Add a new dessert |
+| DELETE | `/api/deserts/:id` | Delete dessert by ID |
 
 Example POST body:
-
+```json
 {
   "name": "Donut",
   "type": "Sweet",
   "calories": 200
 }
-
-
-⸻
-
-🧩 Technologies Used
-
-🖥 Backend:
-	•	Node.js
-	•	Express.js
-	•	MongoDB + Mongoose
-	•	dotenv
-	•	Nodemon
-
-🎨 Frontend:
-	•	React.js (or any other framework you use in client folder)
-
-⸻
-
-🧑‍💻 Author
-
-Yash Dev (YashDev-Design)
-🎓 Auburn University at Montgomery
-💼 Student Affairs · Social Media & Marketing Assistant
-
-⸻
-
-⭐ Show Your Support
-
-If you like this project, please ⭐ the repo and share it — every star helps motivate more great work ✨
-
 ```
+
+---
+
+## 🧩 Technologies Used
+
+### 🖥 Backend:
+- **Node.js**
+- **Express.js**
+- **MongoDB + Mongoose**
+- **dotenv**
+- **Nodemon**
+
+### 🎨 Frontend:
+- **React.js** *(or any other framework you use in client folder)*
+
+---
+
+## 🧑‍💻 Author
+**Yash Dev (YashDev-Design)**  
+🎓 Auburn University at Montgomery  
+💼 Student Affairs · Social Media & Marketing Assistant  
+
+---
+
+## ⭐ Show Your Support
+If you like this project, please ⭐ the repo and share it — every star helps motivate more great work ✨
