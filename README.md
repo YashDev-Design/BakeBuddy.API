@@ -54,6 +54,7 @@ Node - JS Project/
 
 ## 🎨 Admin UI Design
 
+
 Inspired by **Panera Bread / Starbucks / Fazoli’s** dashboard style:
 
 - Poppins / Sora Premium Fonts
@@ -64,6 +65,17 @@ Inspired by **Panera Bread / Starbucks / Fazoli’s** dashboard style:
 - Light Pastel Bakery Theme
 - Menu Items instead of "Desserts" list
 - Zero horizontal scrolling (mobile friendly)
+
+### 🔜 Upcoming Admin Features (UI Ready)
+
+The dashboard already includes navigation buttons for future expansion:
+
+- **Orders** — will display customer order history & live order tracking
+- **Users** — admin can manage registered customers/accounts
+- **Analytics** — sales charts, top-selling items & performance insights
+
+These buttons are active placeholders that currently show a  
+“🚧 Feature Coming Soon” prompt, demonstrating planned scalability.
 
 ---
 
