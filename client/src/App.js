@@ -1,17 +1,21 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import api from "./api";
+import Login from "./pages/Login";
+import Register from "./pages/Register";
+import AdminLogin from "./pages/AdminLogin";
 
-function App() {
-  const [products, setProducts] = useState([]);
-  const [form, setForm] = useState({ name: "", type: "", calories: "" });
-  const [editId, setEditId] = useState(null);
+function AdminApp() {
+  const [products, setProducts] = React.useState([]);
+  const [form, setForm] = React.useState({ name: "", type: "", calories: "" });
+  const [editId, setEditId] = React.useState(null);
 
   const fetchData = async () => {
     const res = await api.get("/products");
     setProducts(res.data);
   };
 
-  useEffect(() => {
+  React.useEffect(() => {
     fetchData();
   }, []);
 
@@ -59,7 +63,6 @@ function App() {
         overflowX: "hidden",
       }}
     >
-      {/* NAVBAR */}
       <header
         style={{
           width: "100%",
@@ -111,7 +114,6 @@ function App() {
         </div>
       </header>
 
-      {/* MAIN CONTENT */}
       <main
         style={{
           maxWidth: "900px",
@@ -119,7 +121,6 @@ function App() {
           padding: "40px 20px",
         }}
       >
-        {/* ADD/EDIT PRODUCT */}
         <section
           style={{
             background: "white",
@@ -161,7 +162,6 @@ function App() {
           </form>
         </section>
 
-        {/* PRODUCT LIST */}
         <h3 style={{ marginTop: "40px" }}>📋 Menu Items</h3>
 
         <div style={{
@@ -255,4 +255,16 @@ const deleteButtonStyle = {
   fontWeight: "600",
 };
 
-export default App;
+export default function App() {
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Navigate to="/login" />}/>
+        <Route path="/login" element={<Login />} />
+        <Route path="/admin" element={<AdminApp />} />
+        <Route path="/register" element={<Register />} />
+        <Route path="/admin-login" element={<AdminLogin />} />
+      </Routes>
+    </BrowserRouter>
+  );
+}

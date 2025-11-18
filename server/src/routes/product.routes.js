@@ -1,16 +1,16 @@
-const express = require("express");
-const router = express.Router();
-const {
+import express from "express";
+import {
   getProducts,
-  addProduct,
+  createProduct,
   updateProduct,
   deleteProduct,
-} = require("../controllers/product.controller");
+} from "../controllers/product.controller.js";
 
-// CRUD endpoints
+const router = express.Router();
+
 router.get("/", getProducts);
-router.post("/", addProduct);
+router.post("/", createProduct);
 router.put("/:id", updateProduct);
 router.delete("/:id", deleteProduct);
 
-module.exports = router;
+export default router;

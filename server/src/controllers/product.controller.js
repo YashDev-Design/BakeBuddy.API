@@ -1,7 +1,7 @@
-const Product = require("../models/product.model");
+import Product from "../models/product.model.js";
 
 // GET all products
-exports.getProducts = async (req, res) => {
+export const getProducts = async (req, res) => {
   try {
     const products = await Product.find();
     res.json(products);
@@ -10,8 +10,8 @@ exports.getProducts = async (req, res) => {
   }
 };
 
-// POST new product
-exports.addProduct = async (req, res) => {
+// CREATE new product
+export const createProduct = async (req, res) => {
   try {
     const { name, type, calories } = req.body;
     const newProduct = new Product({ name, type, calories });
@@ -25,7 +25,7 @@ exports.addProduct = async (req, res) => {
 };
 
 // PUT update product by ID
-exports.updateProduct = async (req, res) => {
+export const updateProduct = async (req, res) => {
   try {
     const { id } = req.params;
     const { name, type, calories } = req.body;
@@ -46,7 +46,7 @@ exports.updateProduct = async (req, res) => {
 };
 
 // DELETE product by ID
-exports.deleteProduct = async (req, res) => {
+export const deleteProduct = async (req, res) => {
   try {
     const { id } = req.params;
     const deletedProduct = await Product.findByIdAndDelete(id);

@@ -1,6 +1,8 @@
-const app = require("./app");
-const PORT = process.env.PORT || 10000;
+import app from "./app.js";
+import dotenv from "dotenv";
 
-app.listen(PORT, () => {
-  console.log(`✅ BakeBuddy server running on http://localhost:${PORT}`);
+dotenv.config();
+
+app.listen(process.env.PORT || 10000, () => {
+  console.log("🍰 BakeBuddy server running on port", process.env.PORT || 10000);
 });

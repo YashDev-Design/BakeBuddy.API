@@ -1,8 +1,9 @@
-const express = require("express");
-const cors = require("cors");
-const dotenv = require("dotenv");
-const connectDB = require("./config/db");
-const productRoutes = require("./routes/product.routes");
+import express from "express";
+import cors from "cors";
+import dotenv from "dotenv";
+import connectDB from "./config/db.js";
+import productRoutes from "./routes/product.routes.js";
+import authRoutes from "./routes/auth.routes.js";
 
 dotenv.config();
 const app = express();
@@ -16,10 +17,12 @@ connectDB();
 
 // Routes
 app.use("/api/products", productRoutes);
+app.use("/api/auth", authRoutes);
 
 // Root route
 app.get("/", (req, res) => {
   res.send("🍰 BakeBuddy backend running perfectly (MVC structure)");
 });
 
-module.exports = app;
+export default app;
+
