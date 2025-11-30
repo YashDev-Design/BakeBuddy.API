@@ -85,7 +85,7 @@ Bakebuddy-SYSTEM/
 
 ---
 
-## ✨ Phase 1 — Core Functionality (Completed)
+## ✨ Level 1 — Core Functionality (Completed)
 
 Core foundation of BakeBuddy:
 
@@ -101,7 +101,7 @@ Core foundation of BakeBuddy:
 
 ---
 
-## 🔐 Phase 2 — Authentication & Multi‑Role Access (Completed)
+## 🔐 Level 2 — Authentication & Multi‑Role Access (Completed)
 
 Robust security + structured authentication:
 
@@ -116,7 +116,7 @@ Robust security + structured authentication:
 
 ---
 
-## 🛒 Phase 3 — Ordering System (Completed)
+## 🛒 Level 3 — Ordering System (Completed)
 
 Real-world ecommerce functionality:
 
@@ -156,7 +156,7 @@ Real-world ecommerce functionality:
 
 ---
 
-## 🚀 Phase 4 — Customer Order Tracking (Upcoming)
+## 🚀 Level 4 — Customer Order Tracking 
 
 Next planned implementation:
 
@@ -190,17 +190,6 @@ Inspired by **Panera Bread / Starbucks / Fazoli’s** dashboard style:
 - Light Pastel Bakery Theme
 - Menu Items instead of "Desserts" list
 - Zero horizontal scrolling (mobile friendly)
-
-### 🔜 Upcoming Admin Features (UI Ready)
-
-The dashboard already includes navigation buttons for future expansion:
-
-- **Orders** — will display customer order history & live order tracking
-- **Users** — admin can manage registered customers/accounts
-- **Analytics** — sales charts, top-selling items & performance insights
-
-These buttons are active placeholders that currently show a  
-“🚧 Feature Coming Soon” prompt, demonstrating planned scalability.
 
 ---
 
@@ -295,114 +284,7 @@ Backend:
 
 ---
 
----
-
-## 🧠 API Endpoints (Updated)
-
-| Method | Endpoint            | Description        |
-| ------ | ------------------- | ------------------ |
-| GET    | `/api/products`     | Fetch all products |
-| POST   | `/api/products`     | Add new product    |
-| PUT    | `/api/products/:id` | Update product     |
-| DELETE | `/api/products/:id` | Delete product     |
-
-📌 Example POST body:
-
-```json
-{
-  "name": "Chocolate Roll",
-  "type": "Pastry",
-  "calories": 260
-}
-```
-
----
-
-## 🚀 Run the Project
-
-### 1️⃣ Clone
-
-```bash
-git clone https://github.com/YashDev-Design/MyDeserts-API.git
-cd "Node - JS Project"
-```
-
----
-
-### 2️⃣ Setup Backend
-
-```bash
-cd server
-npm install
-```
-
-Create `.env`:
-
-```
-PORT=10000
-MONGO_URI=your_connection_string
-```
-
-Run server:
-
-```bash
-npm run dev
-```
-
----
-
-### 3️⃣ Setup Frontend
-
-```bash
-cd ../client
-npm install
-npm start
-```
-
----
-
-## 🔭 Roadmap (Next Steps)
-
-- 🖼 Product Images & Categories
-- 📱 Public Customer Menu UI (Mobile friendly)
-- 🌓 Dark Mode Toggle
-- 🌍 Deployment (Render + Netlify + MongoDB Atlas)
-
----
-
-## 🚧 Phase 3 — Completed
-
-We are now building real-world SaaS functionality:
-
-- Customer-facing authentication
-- Cart & order management
-- Real-time admin analytics
-- Product images with cloud storage
-- Multi-role architecture (Admin vs Customer)
-
----
-
-## ✅ **Phase 4 — Customer Order Tracking (Completed)**
-
-A complete customer-facing order tracking module including:
-
-### ⭐ My Orders Page
-
-- Displays all orders made by the logged‑in customer
-- Shows status badges with bakery‑styled UI
-- Includes timestamps, totals, and item details
-- Consistent pastel design matching the app theme
-- “Back to Home” button added (top‑right), matching admin navigation design
-
-### ⭐ Backend Integrations
-
-- `/api/orders/my` implemented
-- Auto-fetch logic ready for polling/real-time upgrades
-- Clean response structure for frontend use
-
----
-
-## ⚡ **Phase 5 — Emails, Analytics & Automation (Completed)**
+## ⚡ Level 5 — Emails, Analytics & Automation (Completed)
 
 A huge upgrade that made BakeBuddy feel like a real production app:
 
@@ -418,7 +300,7 @@ Style is fully branded with BakeBuddy pastel theme.
 
 ---
 
-## 🎁 **Extra Enhancements Added After Phase 5**
+## 🎁 Extra Enhancements Added After Level 5
 
 ### ✔ Navigation UX Polished
 
@@ -499,6 +381,81 @@ BakeBuddy is now a **full-featured MERN SaaS bakery platform** with:
 - Role-Based Routing
 - Fully Styled UI
 - Clean Documentation
+
+---
+
+## 🧠 API Endpoints (Updated)
+
+| Method | Endpoint            | Description        |
+| ------ | ------------------- | ------------------ |
+| GET    | `/api/products`     | Fetch all products |
+| POST   | `/api/products`     | Add new product    |
+| PUT    | `/api/products/:id` | Update product     |
+| DELETE | `/api/products/:id` | Delete product     |
+
+📌 Example POST body:
+
+```json
+{
+  "name": "Chocolate Roll",
+  "type": "Pastry",
+  "calories": 260
+}
+```
+
+---
+
+## 🚀 Run the Project
+
+### 1️⃣ Clone
+
+```bash
+git clone https://github.com/YashDev-Design/MyDeserts-API.git
+cd "Node - JS Project"
+```
+
+---
+
+### 2️⃣ Setup Backend
+
+```bash
+cd server
+npm install
+```
+
+Create `.env`:
+
+```
+PORT=10000
+MONGO_URI=your_connection_string
+```
+
+Run server:
+
+```bash
+npm run dev
+```
+
+---
+
+### 3️⃣ Setup Frontend
+
+```bash
+cd ../client
+npm install
+npm start
+```
+
+---
+
+## 🔭 Roadmap (Next Steps)
+
+- 🖼 Product Images & Categories
+- 📱 Public Customer Menu UI (Mobile friendly)
+- 🌓 Dark Mode Toggle
+- 🌍 Deployment (Render + Netlify + MongoDB Atlas)
+
+---
 
 ## 👨‍💻 Developer
 
