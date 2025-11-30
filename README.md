@@ -268,6 +268,35 @@ Below is the current **BakeBuddy Admin Dashboard**, featuring:
 
 ---
 
+## 📊 Admin Analytics Dashboard
+
+A fully functional analytics page showing:
+
+- Total revenue
+- Total completed orders
+- Auto‑recalculated insights when an order is marked **completed**
+- Clean pastel-themed UI consistent with the entire BakeBuddy design
+
+Backend:
+
+- Recalculates revenue on every status update
+- Cleaner & optimized order queries  
+  <img src="./client/public/Admin - Analytic&apos;s Page.png" width="500" />
+
+---
+
+### 👥 Admin Users Management Page
+
+- Lists all registered customers
+- Shows email, name, and account creation date
+- Admin‑only protected route
+- Clean dashboard navigation  
+  <img src="./client/public/Admin - Users Page.png" width="500" />
+
+---
+
+---
+
 ## 🧠 API Endpoints (Updated)
 
 | Method | Endpoint            | Description        |
@@ -334,10 +363,6 @@ npm start
 
 ## 🔭 Roadmap (Next Steps)
 
-- 👥 Customer Login & Registration
-- 🛒 Order Placement & Cart System
-- 🧾 Order History & Tracking
-- 📊 Analytics Dashboard (Sales, Trends, Insights)
 - 🖼 Product Images & Categories
 - 📱 Public Customer Menu UI (Mobile friendly)
 - 🌓 Dark Mode Toggle
@@ -345,7 +370,7 @@ npm start
 
 ---
 
-## 🚧 Phase 3 — In Progress
+## 🚧 Phase 3 — Completed
 
 We are now building real-world SaaS functionality:
 
@@ -357,13 +382,123 @@ We are now building real-world SaaS functionality:
 
 ---
 
-**Frontend:** React, Axios, JSX, CSS  
-**Backend:** Node.js, Express.js, MVC Pattern  
-**Database:** MongoDB + Mongoose  
-**Dev Tools:** Nodemon, dotenv, CORS  
-**Architecture:** Full Stack, REST API, MVC
+## ✅ **Phase 4 — Customer Order Tracking (Completed)**
+
+A complete customer-facing order tracking module including:
+
+### ⭐ My Orders Page
+
+- Displays all orders made by the logged‑in customer
+- Shows status badges with bakery‑styled UI
+- Includes timestamps, totals, and item details
+- Consistent pastel design matching the app theme
+- “Back to Home” button added (top‑right), matching admin navigation design
+
+### ⭐ Backend Integrations
+
+- `/api/orders/my` implemented
+- Auto-fetch logic ready for polling/real-time upgrades
+- Clean response structure for frontend use
 
 ---
+
+## ⚡ **Phase 5 — Emails, Analytics & Automation (Completed)**
+
+A huge upgrade that made BakeBuddy feel like a real production app:
+
+### 💌 Email Notifications (Nodemailer + Gmail App Password)
+
+We now send **3 full HTML emails**:
+
+1. **Welcome Email** on Sign Up
+2. **Order Placed Email** with order summary
+3. **Order Status Updated Email** (Preparing → Ready → Completed)
+
+Style is fully branded with BakeBuddy pastel theme.
+
+---
+
+## 🎁 **Extra Enhancements Added After Phase 5**
+
+### ✔ Navigation UX Polished
+
+- Admin Dashboard → Back Button
+- Customer My Orders → Back to Home
+- Admin Login → Customer Access quick‑button
+- Customer Login → Admin Access quick‑button
+
+### ✔ Email Logging Cleanup
+
+- Now logs:  
+  `📨 Email sent to user@example.com`
+- Removed verbose debug logs
+
+### ✔ Cart System Fully Upgraded
+
+- Added missing cart model
+- Added full cart controller (add, get, remove, clear)
+- Repaired imports + routes
+- Now fully connected to order system
+
+---
+
+# 🧩 Updated Tech Stack Summary (As of Latest Build)
+
+### **Frontend**
+
+- React 18
+- Axios
+- React Router (Pages pattern)
+- Custom CSS (Pastel UI theme)
+
+### **Backend**
+
+- Node.js + Express.js
+- MVC Folder Structure
+- JWT Authentication
+- bcrypt password hashing
+- Role‑based admin middleware
+- Nodemailer email system
+- Complete cart + orders controllers
+- Clean analytics logic
+
+### **Database**
+
+- MongoDB Atlas
+- Mongoose models:
+  - User
+  - Product
+  - Cart
+  - Order
+
+### **Dev Tools**
+
+- Postman
+- VS Code
+- Git + GitHub
+- Nodemon
+- dotenv
+- Gmail App Password
+
+---
+
+# 🍰 Final Summary (Up to Today)
+
+BakeBuddy is now a **full-featured MERN SaaS bakery platform** with:
+
+- Admin Dashboard
+- Products CRUD
+- Customer Login / Registration
+- Cart System
+- Order Placement
+- Order Management (Admin)
+- Order Tracking (Customer)
+- Email Notifications
+- Admin Analytics
+- Admin Users Page
+- Role-Based Routing
+- Fully Styled UI
+- Clean Documentation
 
 ## 👨‍💻 Developer
 
@@ -376,5 +511,6 @@ We are now building real-world SaaS functionality:
 
 ## ⭐ Support
 
-If you like this project — star it on GitHub!  
-It helps me grow and keeps the bakery open 🍩✨
+If you like this project — star it on GitHub!
+
+---
