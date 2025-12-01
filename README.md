@@ -86,7 +86,7 @@ Bakebuddy-SYSTEM/
 
 ---
 
-## ✨ Level 1 — Core Functionality (Completed)
+## ✨ Level 1 — Core Functionality 
 
 Core foundation of BakeBuddy:
 
@@ -102,7 +102,7 @@ Core foundation of BakeBuddy:
 
 ---
 
-## 🔐 Level 2 — Authentication & Multi‑Role Access (Completed)
+## 🔐 Level 2 — Authentication & Multi‑Role Access 
 
 Robust security + structured authentication:
 
@@ -117,7 +117,7 @@ Robust security + structured authentication:
 
 ---
 
-## 🛒 Level 3 — Ordering System (Completed)
+## 🛒 Level 3 — Ordering System 
 
 Real-world ecommerce functionality:
 
@@ -176,6 +176,22 @@ Customers will be able to:
 - Status badges for customer orders
 - Auto-refresh logic (5–10s intervals)
 - Optional: push-based updates (WebSockets/SSE)
+
+---
+
+## ⚡ Level 5 — Emails, Analytics & Automation (Completed)
+
+A huge upgrade that made BakeBuddy feel like a real production app:
+
+### 💌 Email Notifications (Nodemailer + Gmail App Password)
+
+We now send **3 full HTML emails**:
+
+1. **Welcome Email** on Sign Up
+2. **Order Placed Email** with order summary
+3. **Order Status Updated Email** (Preparing → Ready → Completed)
+
+Style is fully branded with BakeBuddy pastel theme.
 
 ---
 
@@ -282,22 +298,6 @@ Backend:
 - Admin‑only protected route
 - Clean dashboard navigation  
   <img src="./client/public/Admin - Users Page.png" width="500" />
-
----
-
-## ⚡ Level 5 — Emails, Analytics & Automation (Completed)
-
-A huge upgrade that made BakeBuddy feel like a real production app:
-
-### 💌 Email Notifications (Nodemailer + Gmail App Password)
-
-We now send **3 full HTML emails**:
-
-1. **Welcome Email** on Sign Up
-2. **Order Placed Email** with order summary
-3. **Order Status Updated Email** (Preparing → Ready → Completed)
-
-Style is fully branded with BakeBuddy pastel theme.
 
 ---
 
