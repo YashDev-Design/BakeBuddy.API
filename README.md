@@ -74,7 +74,8 @@ Bakebuddy-SYSTEM/
     │   │   ├── cart.routes.js
     │   │   └── order.routes.js
     │   ├── utils/                   # Token + Helpers
-    │   │   └── token.util.js
+    │   │   └── token.util.js        # Token Logic's
+    │   │   ├── email.js             # NodeEmailer Setup
     │   └── scripts/                 # Admin CLI Tools
     │       ├── createAdmin.js
     │       ├── deleteAdmin.js
